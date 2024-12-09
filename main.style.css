@@ -78,6 +78,25 @@ body {
 .featured-content {
     display: flex;
     gap: 1rem;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+    box-sizing: content-box;
+}
+
+/* width */
+.featured-content::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Handle */
+.featured-content::-webkit-scrollbar-thumb {
+    background: #4c4c4c;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+.featured-content::-webkit-scrollbar-thumb:hover {
+    background: #363636; 
 }
 
 .featured-element {
